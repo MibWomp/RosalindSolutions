@@ -5,17 +5,16 @@
 #Given: A DNA string s of length at most 1000 nt.
 
 #Return: Four integers (separated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in s.
-import os
 
 dnaString = ""
 
-#with open("./rosalind_dna.txt") as file:
-#    dnaString = file.read
+with open("BioinformaticsStronghold/CountingDNANucleotides/rosalind_dna.txt") as file:
+    dnaString = file.read()
 
-#aCount = dnaString.count("a")
-#cCount = dnaString.count("c")
-#gCount = dnaString.count("g")
-#tCount = dnaString.count("t")
+aCount = dnaString.count("A")
+cCount = dnaString.count("C")
+gCount = dnaString.count("G")
+tCount = dnaString.count("T")
 
-print(os.listdir())
-#print(aCount + " " + cCount + " " + gCount + " " + tCount)
+print(str(aCount) + " " + str(cCount) + " " + str(gCount) + " " + str(tCount))
+
